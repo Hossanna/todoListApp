@@ -9,12 +9,55 @@ body{
   }
 
   .container{
-      border: 2px solid grey;
+      box-shadow: 0, 0, 3px rgba(0, 0, 0, 0.1);
       width: 360px;
-      margin: 0 auto;
+      margin: 100px auto;
+      background-color: #f7f7f7;
   }
+
+  h1{
+      background-color: #2980b9;
+      margin: 0;
+      color: white;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      font-size: 24px;
+      font-weight: normal;
+  }
+
   li{
       list-style: none;
+      background: #fff;
+      height: 40px;
+      line-height: 40px;
+      color: #777;
+  }
+
+  li:nth-of-type(2n){
+      background: #f7f7f7;
+  }
+  ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+  }
+
+  input{
+      color: #2980b9;
+      background-color: #f7f7f7;
+      font-size: 18px;
+      box-sizing: border-box;
+      width: 100%;
+      outline: none;
+      padding: 13px 13px 13px 20px;
+      text-transform: capitalize;
+  }
+
+  input:focus{
+      background: white;
+      outline: none;
+      border: 2px solid #2980b9;
   }
 
   .completed{
