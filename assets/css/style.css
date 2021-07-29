@@ -7,3 +7,17 @@ body{
     font-family: 'Roboto', sans-serif;
     
   }
+
+  .container{
+      border: 2px solid grey;
+      width: 360px;
+      margin: 0 auto;
+  }
+  li{
+      list-style: none;
+  }
+
+  .completed{
+      color: grey;
+      text-decoration: line-through;
+  }
