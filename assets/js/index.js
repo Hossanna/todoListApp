@@ -20,7 +20,7 @@ $("input[type = 'text'").keypress(function(e){
         var newTodo = $(this).val();
 
         $(this).val("");
-        $("ul").append("<li>  <span><i class='fa fa-trash'></i> </span> " + newTodo + " <input class='checkbox' type='checkbox'> </li>")
+        $("ul").append("<li>  <span><i class='fa fa-trash'></i> </span> <i class='fa fa-edit'></i> " + newTodo + " <input class='checkbox' type='checkbox'> </li>")
     }
 });
 
