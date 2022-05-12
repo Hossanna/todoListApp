@@ -20,12 +20,25 @@ $("input[type = 'text'").keypress(function(e){
         var newTodo = $(this).val();
 
         $(this).val("");
-        $("ul").append("<li>  <span><i class='fa fa-trash'></i> </span> <i class='fa fa-edit'></i> " + newTodo + " <input class='checkbox' type='checkbox'> </li>")
+        $("ul").append("<li>  <span><i class='fa fa-trash'></i> </span> " + newTodo + " <input class='checkbox' type='checkbox'> </li>")
     }
 });
 
+$("#add-btn").click(function(e){
+    if ($("input[type = 'text'").val() === "" ) {
+        alert("Please add a todo");
+        return;
+      }
+
+    var newTodo = $("input[type = 'text'").val();
+
+    $("input[type = 'text'").val("");
+    $("ul").append("<li>  <span><i class='fa fa-trash'></i> </span>  " + newTodo + " <input class='checkbox' type='checkbox'> </li>")
+
+});
+
 $(".fa-plus").click(function(){
-    $("input[type = 'text'").fadeToggle();
+    $(".flex").fadeToggle();
 });
 
 $(".delete").click(function(e){
